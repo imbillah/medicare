@@ -1,0 +1,66 @@
+[
+    {
+        "id": "111a",
+        "name": "Lucas Murphy",
+        "country": "USA",
+        "ratings": "4.8",
+        "img": "https://i.ibb.co/HBw0L7q/1.jpg",
+		"remarks": "Recently visited health check up department of Apollo Hospital for a whole body check up. The entire process from check in to the end was seamless. The staff at the health check department was courteous, helpful and very attentive. I would highly recommend this hospital to anyone looking for something similar services."
+    },
+	{
+        "id": "222b",
+        "name": "Zachary Shelton",
+        "country": "UK",
+        "ratings": "4.5",
+        "img": "https://i.ibb.co/2k113GJ/2.jpg",
+		"remarks": "Dr Vijay Kumar Chennamchetty: We met Dr Vijay Chennamchetty last month with severe cough and sputum for my father Dr Varaprasad. His way of handling patients is excellent and so soothing that the patient feels immensely confident about recovery. Thanks to Dr. Vijay, within 2 weeks, he is completely normal."
+    },
+	{
+        "id": "333c",
+        "name": "Franklin Morgan",
+        "country": "Russia",
+        "ratings": "5",
+        "img": "https://i.ibb.co/hDvvDfJ/3.jpg",
+		"remarks": "It's very well mannered staff good coordination with patients. Mrs. Praveena garu assisted very well and taken good care towards patients. Overall experience is satisfactory."
+    },
+	{
+        "id": "444d",
+        "name": "Mahbub Sizer",
+        "country": "Bangladesh",
+        "ratings": "4.4",
+        "img": "https://i.ibb.co/pjjkvMz/4.jpg",
+		"remarks": "Dr. Shree kumar Reddy is very experienced opthalmologist doctor in Hyderabad. I have been consulting him for 10+ years for me, family and my Friends. He did cataracts surgery for my mother and now she can see like a normal person."
+    },
+	{
+        "id": "555e",
+        "name": "Regina Urbano",
+        "country": "Canada",
+        "ratings": "4.7",
+        "img": "https://i.ibb.co/QKGtz3V/5.jpg",
+		"remarks": "Since long i was suffering from blood in cough but no doctor except Dr.Vijay kumar chennam chetty identified my problem and started the diagnosis. He is very polite and listens to each patient carefully and clearly explains the required treatment to be done. Strongly recommends dr. Vijay kumar Chennamshetty"
+    },
+	{
+        "id": "666f",
+        "name": "Marta Bradley",
+        "country": "USA",
+        "ratings": "4.9",
+        "img": "https://i.ibb.co/VT4Ngf5/6.jpg",
+		"remarks": "Doctor Rajesh fogla is a professional doctor and he helped me through my whole process of cross linking treatment and Opthalmology department of Apollo hospital jubilee hills is very good,they are cooperative and very helpful."
+    },
+	{
+        "id": "777g",
+        "name": "Gabriel Howell",
+        "country": "Germany",
+        "ratings": "4.5",
+        "img": "https://iili.io/Rt92iF.jpg",
+		"remarks": "The care and hospitality is very incredible besides healty treatment , tests & consultations for my father. I highly recommend everyone to visit the hospital. Thank you."
+    },
+	{
+        "id": "888h",
+        "name": "Elias Walker",
+        "country": "Australia",
+        "ratings": "4.2",
+        "img": "https://iili.io/Rt9Kla.jpg",
+		"remarks": "I am having very good experience whilr attending Appollo Hospital. Very personalized attention and i wish to place on record the attention given Ms Sirisha for attending my PMe Every year."
+    }
+]

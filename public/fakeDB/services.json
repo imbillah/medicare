@@ -1,0 +1,49 @@
+[{
+		"id": "111a",
+		"name": "Cardiology",
+		"tittle": "Treatment of disorders of the heart and the blood vessels",
+		"description": "Cardiology is a branch of medicine that deals with the disorders of the heart as well as some parts of the circulatory system. The field includes medical diagnosis and treatment of congenital heart defects, coronary artery disease, heart failure, valvular heart disease and electrophysiology.",
+		"price": 100,
+		"img": "https://www.hawaiipacifichealth.org/media/3922/what-is-a-cardiologist-web.jpg"
+	},
+	{
+		"id": "222b",
+		"name": "Dentistry",
+		"tittle": "Get treatement for your teeth & always a beautiful smile",
+		"description": "Dentistry, also known as dental medicine and oral medicine, is a branch of medicine that consists of the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral syatem.",
+		"price": 95,
+		"img": "https://www.timeshighereducation.com/student/sites/default/files/styles/default/public/istock_62454854_medium1.jpg"
+	},
+	{
+		"id": "333c",
+		"name": "Darmatology",
+		"tittle": "Get treatement for skin related issue & stay younger",
+		"description": "Dermatology is the branch of medicine dealing with the skin. It is a speciality with both medical and surgical aspects. A dermatologist is a specialist medical doctor who manages diseases related to skin, hair, nails, and some cosmetic problems.",
+		"price": 120,
+		"img": "https://www.srisriholistichospitals.com/wp-content/uploads/2020/12/Dermatologynew.png"
+	},
+	{
+		"id": "444d",
+		"name": "Ophthalmology",
+		"tittle": "Get treatement for eye related issue & have a clear vision",
+		"description": "Ophthalmology is a branch of medicine and surgery that deals with the diagnosis and treatment of disorders of the eye. An ophthalmologist is a physician who specializes in ophthalmology. The credentials include a degree in medicine, followed by additional four to five years of residency training in ophthalmology.",
+		"price": 119,
+		"img": "https://www.pharmaceutical-technology.com/wp-content/uploads/sites/10/2019/02/ophthalmology.jpg"
+	},
+	{
+		"id": "555e",
+		"name": "Gynaecology",
+		"tittle": "Get treatement for your upcoming child & have a happy family",
+		"description": "Gynaecology or gynecology is the medical practice dealing with the health of the female reproductive system. Almost all modern gynaecologists are also obstetricians. In many areas, the specialities of gynaecology and obstetrics overlap. The term means the science of women.",
+		"price": 121,
+		"img": "https://7dmc.ae/wp-content/uploads/2020/08/banner-Gynecology-Clinic2-1200x675.jpg"
+	},
+	{
+		"id": "666f",
+		"name": "Neurology",
+		"tittle": "Visit our best nurologist & have a better, happy life",
+		"description": "Neurology is a branch of medicine dealing with disorders of the nervous system. Neurology deals with the diagnosis and treatment of all categories of conditions and disease involving the central and peripheral nervous systems, including their coverings, blood vessels, and all effector tissue, such as muscle.",
+		"price": 175,
+		"img": "https://st.depositphotos.com/1000423/3024/i/950/depositphotos_30240771-stock-photo-doctor-with-tablet-pc.jpg"
+	}
+]

@@ -1,0 +1,56 @@
+[{
+		"id": "111a",
+		"name": "Matthew Reyes",
+		"dept": "Gyneacologist",
+		"experience": 5,
+		"visit": 200,
+		"price": 100,
+		"img": "https://slidesigma.nyc/templatemonster/angular/findpharma/assets/img/doctors-grid/348x350-0.jpg"
+	},
+	{
+		"id": "222b",
+		"name": "Rebecca Gilbert",
+		"dept": "Dentist",
+		"experience": 4,
+		"visit": 120,
+		"price": 75,
+		"img": "https://slidesigma.nyc/templatemonster/angular/findpharma/assets/img/doctors-grid/348x350-1.jpg"
+	},
+	{
+		"id": "333c",
+		"name": "Kathryn Cooper",
+		"dept": "Dermatologist",
+		"experience": 8,
+		"visit": 350,
+		"price": 159,
+		"img": "https://slidesigma.nyc/templatemonster/angular/findpharma/assets/img/doctors-grid/348x350-2.jpg"
+	},
+	{
+		"id": "444d",
+		"name": "Bobby Stanley",
+		"dept": "Cardiologist",
+		"experience": 7,
+		"visit": 250,
+		"price": 175,
+		"img": "https://slidesigma.nyc/templatemonster/angular/findpharma/assets/img/doctors-grid/348x350-3.jpg"
+	},
+
+	{
+		"id": "555e",
+		"name": "Gary Smith",
+		"dept": "Ophthalmologist",
+		"experience": 4,
+		"visit": 129,
+		"price": 99,
+		"img": "https://i.postimg.cc/dVK7XYGX/doc3.jpg"
+	},
+	{
+		"id": "666f",
+		"name": "Matthew William",
+		"dept": "Neurologist",
+		"experience": 8,
+		"visit": 399,
+		"price": 199,
+		"img": "https://i.postimg.cc/3Ry2XHMw/doc4.jpg"
+	}
+]
