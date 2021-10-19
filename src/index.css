@@ -1,1 +1,16 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css");
+/* custom css */
+nav ul li {
+  font-size: 17px;
+  font-weight: 500;
+}
+nav li:hover {
+  background: rgba(0, 128, 0, 0.3);
+  border-radius: 5px;
+}
+.bg-custom {
+  background: honeydew;
+}
+footer {
+  margin-top: auto;
+}

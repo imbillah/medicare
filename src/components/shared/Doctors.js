@@ -13,7 +13,7 @@ function Doctors() {
         <div className='container'>
             <p className='text-center mt-5 fw-bold text-success'>Meet out Doctors</p>
            <h1 className='text-center mb-5 fw-bold'>Our Highly Qualified Doctors</h1>
-            <div className='row row-cols-3 g-4'>
+            <div className='row row-cols-lg-3 g-4'>
             {
                 doctors.map(doctor =>(
                     <article className='text-center' key={doctor.id}>
@@ -24,7 +24,7 @@ function Doctors() {
                     <h5 className="card-title my-3 text-success">{doctor.dept}</h5>
                     <p className='text-muted'>Experience: {doctor.experience}+ years</p>
                     <h5 className="card-title my-4">Visiting fee: ${doctor.price}</h5>
-                    <Link to="/appointment"><button className='btn btn-success mb-3'>Get Appoinment</button></Link>
+                    <Link to="/contact"><button className='btn btn-success mb-3'>Get Appoinment</button></Link>
                     </div>
                     </div>
                     </article>
@@ -35,4 +35,4 @@ function Doctors() {
     )
 }
 
-export default Doctors
+export default Doctors;

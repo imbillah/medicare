@@ -42,7 +42,7 @@ const Header = () => {
                                 <button className="nav-item btn btn-outline-success ms-2" onClick={logOut}>Log Out</button>
                             </ul>
                 :<ul className="navbar-nav">
-                  <li className="nav-item ms-3"><Link to="/login" className="nav-link" style={style}>Log In</Link></li>
+                  <li className="nav-item  ms-lg-3"><Link to="/login" className="nav-link" style={style}>Log In</Link></li>
                   <li className="nav-item"><Link to="/register" className="nav-link" style={style}>Register</Link></li>   
                 </ul>
               }

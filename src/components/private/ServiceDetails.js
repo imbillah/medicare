@@ -26,7 +26,8 @@ const srData = filterService[0]
           </h5>
           <h4 className="card-title mt-4 fw-bold">Service Details:</h4>
           <p className="card-text fst-italic lead">{srData?.description}</p>
-          <Link to ='/appointment'> <button className='btn btn-outline-success'>Book a doctor</button></Link>
+          <h5 className='mb-4 fw-bold'>Appointment start from: ${srData?.price}</h5>
+          <Link to ='/contact'> <button className='btn btn-success'>Appoint a doctor</button></Link>
         </div>
       </div>
     </div>

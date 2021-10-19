@@ -11,27 +11,45 @@ import {
   updateProfile
 } from "firebase/auth";
 import { useEffect, useState } from "react";
-import { Redirect, useHistory } from "react-router";
+
 
 
 initilizeFirebase();
 
 const useFirebase = ()=>{
   const [user, setUser] = useState({});
-  const history = useHistory();
   const auth = getAuth();
-  const googleProvider = new GoogleAuthProvider();
 
+  //google signin
   const googleSignInHandler =()=>{
-      signInWithPopup(auth, googleProvider).then(res =>{
-          <Redirect to ='/'/>
-      })
+        const googleProvider = new GoogleAuthProvider();
+        return signInWithPopup(auth, googleProvider);  
   }
+  //email & pass register
+  const registerUser = (name, email, password) => {
+    createUserWithEmailAndPassword(auth, email, password)
+        .then((res) => {
+            setUser(res.user)
+            updateProfile(auth.currentUser, {
+                displayName: name
+            }).then(() => {
+                console.log(res.user)
+            })
+
+        });
+}
+    // user login with email & pass
+    const logInUser = (email, password) => {
+       return signInWithEmailAndPassword(auth, email , password)
+        
+    }
+  //user logout
   const logOut = ()=>{
       signOut(auth).then(()=>{
           setUser({})
       })
   }
+  // update user
   useEffect(()=>{
       onAuthStateChanged(auth, (user) =>{
           if(user){
@@ -42,6 +60,8 @@ const useFirebase = ()=>{
   return{
       user,
       googleSignInHandler,
+      registerUser,
+      logInUser,
       logOut
   }
 };
