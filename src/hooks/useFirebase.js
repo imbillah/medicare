@@ -1,5 +1,5 @@
 import initilizeFirebase from "../firebase/config";
-
+import swal from 'sweetalert';
 import {
   createUserWithEmailAndPassword, 
   getAuth, 
@@ -33,7 +33,7 @@ const useFirebase = ()=>{
             updateProfile(auth.currentUser, {
                 displayName: name
             }).then(() => {
-                console.log(res.user)
+                swal("Good job!", "Account created! Nevigate to Home page", "success");
             })
 
         });

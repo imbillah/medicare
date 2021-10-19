@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { Link, useHistory, useLocation } from 'react-router-dom';
+import swal from 'sweetalert';
 import useAuth from '../../hooks/useAuth';
 
 function LogIn() {
@@ -22,6 +23,7 @@ function LogIn() {
       e.preventDefault()
       logInUser(email, password)
       .then(res=>{
+        swal("Sign in Successful!", "Welcome back !", "info")
         history.push(redirectUrl)
       })
       
@@ -30,6 +32,7 @@ function LogIn() {
     const handleGoogleSignIn =()=>{
       googleSignInHandler()
       .then(res=>{
+        swal("Sign in Successful!", "Welcome back !", "info")
         history.push(redirectUrl)
       })
     };

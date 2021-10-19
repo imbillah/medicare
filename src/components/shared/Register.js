@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useHistory, useLocation } from 'react-router-dom'
+import swal from 'sweetalert';
 import useAuth from '../../hooks/useAuth'
 function Register() {
   const [name, setName] = useState('') 
@@ -28,6 +29,7 @@ const registerHandler = e =>{
 const handleGoogleSignIn =()=>{
   googleSignInHandler()
   .then(res=>{
+    swal("Good job!", "Account has been created!", "success");
     history.push(redirectUrl)
   })
 };
@@ -38,7 +40,7 @@ const handleGoogleSignIn =()=>{
       <form onSubmit={registerHandler}>
             <input type="text" onBlur={userName} className="form-control w-50 d-block mx-auto" placeholder="Your Name" required/>
             <input type="email" onBlur={userEmail} className="form-control mt-3 w-50 d-block mx-auto" placeholder="Your Email" required/>
-            <input type="password" onBlur={userPassword} className="form-control mt-3 w-50 d-block mx-auto" placeholder="Password" required/>
+            <input type="password" onBlur={userPassword} className="form-control mt-3 w-50 d-block mx-auto" placeholder="Password must be 6 characters" required/>
             <button className='btn btn-success mt-4 px-4 py-2'>Register</button>
       </form>
       <h5 className='mt-3 text-muted'>OR</h5>
