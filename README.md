@@ -1,6 +1,6 @@
 # Project Name: MediCare (an Online Healthcare Platform)
 
-### Live Site : [Medicare](https://ischool-602634.netlify.app/)
+### Live Site : [Medicare](https://medi-care-online.web.app/)
 
 ## Technology Used:
 
