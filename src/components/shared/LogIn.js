@@ -18,17 +18,18 @@ function LogIn() {
     const userPassword = e=>{
       setPassword(e.target.value)
     }
-    // email/pass signin
+
+    // email/pass login
     const loginHandler = e =>{
       e.preventDefault()
       logInUser(email, password)
       .then(res=>{
-        swal("Sign in Successful!", "Welcome back !", "info")
+        swal("Log in Successful!", "Welcome back !", "success")
         history.push(redirectUrl)
-      })
-      
+      }).catch(error => swal("Something went wrong!", `${error.message}`, "error")) 
     }
-    // google signIn
+
+    // google logIn
     const handleGoogleSignIn =()=>{
       googleSignInHandler()
       .then(res=>{
@@ -36,6 +37,7 @@ function LogIn() {
         history.push(redirectUrl)
       })
     };
+
     return (
         <div className='container text-center mt-5  shadow p-4'>
       <h2 className='fw-bold mb-5'>Log in to your account</h2>

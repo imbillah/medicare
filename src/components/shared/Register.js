@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { Link, useHistory, useLocation } from 'react-router-dom'
 import swal from 'sweetalert';
+import { updateProfile } from '@firebase/auth';
 import useAuth from '../../hooks/useAuth'
+
 function Register() {
   const [name, setName] = useState('') 
   const [email, setEmail] = useState('') 
@@ -10,7 +12,8 @@ function Register() {
   const history = useHistory();
   const redirectUrl = location.state?.from || '/'
 
-const {googleSignInHandler, registerUser} = useAuth();
+const {googleSignInHandler, registerUser, auth, setUser} = useAuth();
+
 const userName= e=>{
  setName(e.target.value);
 }
@@ -20,11 +23,23 @@ const userEmail = e =>{
 const userPassword = e=>{
   setPassword(e.target.value)
 }
+
 // email/pass registration
 const registerHandler = e =>{
   e.preventDefault()
-  registerUser(name, email, password);
+  registerUser(name, email, password)
+  .then((res) => {
+    setUser(res.user)
+    updateProfile(auth.currentUser, {
+        displayName: name
+    }).then(() => {
+        swal("Good job!", "Account has been created! Reload Page to see update", "success");
+        history.push(redirectUrl);
+    })
+  }).catch(error => swal("Something went wrong!", `${error.message}`, "error"))
+
 }
+
 // google registration
 const handleGoogleSignIn =()=>{
   googleSignInHandler()
@@ -33,6 +48,7 @@ const handleGoogleSignIn =()=>{
     history.push(redirectUrl)
   })
 };
+
   return (
     <div className='container text-center mt-5  shadow p-4'>
       <h2 className='fw-bold'>Register your account</h2>

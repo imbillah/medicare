@@ -1,5 +1,4 @@
 import initilizeFirebase from "../firebase/config";
-import swal from 'sweetalert';
 import {
   createUserWithEmailAndPassword, 
   getAuth, 
@@ -8,7 +7,6 @@ import {
   signInWithEmailAndPassword, 
   signInWithPopup, 
   signOut, 
-  updateProfile
 } from "firebase/auth";
 import { useEffect, useState } from "react";
 
@@ -25,18 +23,9 @@ const useFirebase = ()=>{
         const googleProvider = new GoogleAuthProvider();
         return signInWithPopup(auth, googleProvider);  
   }
-  //email & pass register
+  //email & pass registration
   const registerUser = (name, email, password) => {
-    createUserWithEmailAndPassword(auth, email, password)
-        .then((res) => {
-            setUser(res.user)
-            updateProfile(auth.currentUser, {
-                displayName: name
-            }).then(() => {
-                swal("Good job!", "Account created! Nevigate to Home page", "success");
-            })
-
-        });
+    return createUserWithEmailAndPassword(auth, email, password)
 }
     // user login with email & pass
     const logInUser = (email, password) => {
@@ -55,10 +44,15 @@ const useFirebase = ()=>{
           if(user){
               setUser(user)
           }
+          else{
+              setUser({})
+          }
       })
   },[])
   return{
       user,
+      setUser,
+      auth,
       googleSignInHandler,
       registerUser,
       logInUser,
