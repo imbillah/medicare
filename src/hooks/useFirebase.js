@@ -38,7 +38,7 @@ const useFirebase = ()=>{
           setUser({})
       })
   }
-  // update user
+  // update user info
   useEffect(()=>{
       onAuthStateChanged(auth, (user) =>{
           if(user){
@@ -49,6 +49,7 @@ const useFirebase = ()=>{
           }
       })
   },[])
+  
   return{
       user,
       setUser,

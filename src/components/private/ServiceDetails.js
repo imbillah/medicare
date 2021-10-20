@@ -18,7 +18,7 @@ const srData = filterService[0]
 
     return (
         <div className="container text-center">
-        <div className="card my-5 p-3 mx-auto rounded-3 shadow"style={{ width: "40rem" }}>
+        <div className="card my-5 p-3 mx-auto rounded-3 shadow w-75">
         <img src={srData?.img}className="card-img-top rounded-3" alt=''/>
         <div className="card-body">
           <h5 className="card-title text-success fw-bold display-6 my-3">

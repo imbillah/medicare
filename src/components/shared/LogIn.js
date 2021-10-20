@@ -33,7 +33,7 @@ function LogIn() {
     const handleGoogleSignIn =()=>{
       googleSignInHandler()
       .then(res=>{
-        swal("Sign in Successful!", "Welcome back !", "info")
+        swal("Sign in Successful!", "Welcome back !", "success")
         history.push(redirectUrl)
       })
     };

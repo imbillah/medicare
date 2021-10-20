@@ -2,11 +2,12 @@ import React from 'react'
 
 function Footer() {
     return (
-        <footer className='bg-custom'>
+        <footer className='bg-custom mt-auto'>
       <div className='container py-3 mt-5 bg-custom' >
       <div className='row  row-cols-lg-3'>
         <div>
            <h4 className='mb-3'>Medi<span className='text-success'>Care</span></h4>
+           <p>Better Healthcare | Better Life</p>
            <i className="bi bi-geo-alt-fill text-success"> 17004 W Marshall Ln</i>
            <br />
             <i className="bi bi-telephone-fill text-success"> +1-614-368-7964</i>

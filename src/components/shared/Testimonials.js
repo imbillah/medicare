@@ -11,7 +11,7 @@ function Testimonials() {
         <div className='container text-center my-5'>
             <p className='mt-5 fw-bold text-success'>Client Testimonials</p>
             <h1 className='my-4 fw-bold'>What Our Clients Say</h1>
-            <div className ='row row-cols-3 g-4 mt-5'>
+            <div className ='row row-cols-lg-3 g-4 mt-5'>
                 {
                     reviews.map(review =>(
                         <article key={review.id}>
