@@ -10,7 +10,7 @@ const Header = () => {
         <div>
             <header className="bg-custom">
       <div className='container'>
-      <nav className="navbar navbar-expand-md  navbar-light py-3">
+      <nav className="navbar navbar-expand-md navbar-light py-3">
           <h3 className="navbar-brand d-flex align-items-center">
             <NavLink
               to="/"

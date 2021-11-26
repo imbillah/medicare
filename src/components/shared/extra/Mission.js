@@ -5,10 +5,10 @@ function Mission() {
     return (
         <>
         <div className=" container d-lg-flex my-5">
-            <div className="w-50 ms-3">
+            <div className="custom-width ms-3">
             <img src={image} className='img-fluid mt-2' alt="" />
             </div>
-            <div className="w-50 mt-5">
+            <div className="custom-width mt-5">
             <h1 className="fw-bold mt-2">
                 Our Mission
             </h1>
